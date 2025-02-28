@@ -11,6 +11,7 @@ import Education from './components/Education.tsx';
 import Experiences from './components/Experiences.tsx';
 import Technical from './components/Technical.tsx';
 import Achievements from './components/Achievements.tsx';
+import Projects from './components/Projects.tsx';
 
 /*white spaces on left and right, main page take up 80%*/
 const PageWrapper = styled.div`
@@ -51,6 +52,9 @@ function Root() {
                     <Route
                         path="/achievements"
                         element={<Achievements/>}/>
+                    <Route
+                        path="/projects"
+                        element={<Projects/>}/>
                   </Routes>
                 
               </ContainerDiv>
