@@ -7,6 +7,7 @@ import Navigation from './components/Navigation.tsx';
 import Footer from './components/Footer.tsx';
 
 import Home from './components/Home.tsx';
+import Education from './components/Education.tsx';
 
 /*white spaces on left and right, main page take up 80%*/
 const PageWrapper = styled.div`
@@ -28,12 +29,16 @@ function Root() {
 
               <Header/>
               <ContainerDiv>
-                <Navigation/>
 
+                <Navigation/>
+                
                   <Routes>
                     <Route 
                         path="/*" 
                         element={<Home/>}/>
+                    <Route
+                        path="/education"
+                        element={<Education/>}/>
                   </Routes>
                 
               </ContainerDiv>
