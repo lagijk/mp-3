@@ -42,7 +42,7 @@ export default function Navigation(){
                 <NavUl>
                     <NavList><NavLink to="/">Home</NavLink></NavList>
                     <NavList><NavLink to="/education">Education</NavLink></NavList>
-                    <NavList><NavLink to="/experience">Experience</NavLink></NavList>
+                    <NavList><NavLink to="/experiences">Experiences</NavLink></NavList>
                     <NavList><NavLink to="/technical">Technical Skills</NavLink></NavList>
                     <NavList><NavLink to="/achievements">Achievements</NavLink></NavList>
                     <NavList><NavLink to="/projects">Projects</NavLink></NavList>
