@@ -29,7 +29,7 @@ const ImageText = styled.div`
 
 /*css style for text in main*/
 const SchoolsDiv = styled.div`
-    font-size: calc(3px + 2vw);
+    font-size: calc(4px + 1vw);
     color: #112D4E;
     align-self: center;
     width: 50%;
@@ -39,6 +39,14 @@ const SchoolsDiv = styled.div`
 const DateText = styled.p`
     font-size: calc(2px + 1vw);
     padding: 1vh;
+`;
+
+/*reduce image size*/
+const ImageStyle = styled.img`
+    width: 45%;
+    padding: 0.5vw;
+    margin: 1vh 1vw;
+    border-radius: calc(15px + 10vw);
 `;
 
 export default function Education() {
@@ -63,7 +71,7 @@ export default function Education() {
                     </li>
                 </ul>
             </SchoolsDiv>
-
+                <ImageStyle src="public/BU.png" alt="an image of the seal of Boston University"/>
             </ImageText>
         </MainContainer>
     )

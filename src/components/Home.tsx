@@ -43,12 +43,20 @@ const SubMainText = styled.div`
     padding: 1vw;
 `;
 
+/*reduce image size*/
+const ImageStyle = styled.img`
+    width: 45%;
+    padding: 0.5vw;
+    margin: 1vh 1vw;
+    border-radius: calc(1px + 1vw);
+`;
+
 export default function Home() {
     return (
         <MainContainer>
             <Header2>Home</Header2>
             <ImageText>
-                
+                <ImageStyle src="public/Me.jpg" alt="an image of Alex"/>
                 <MainText>
                     <p>
                         My name is Alex Chen. I'm a student at Boston University studying Computer Science, 

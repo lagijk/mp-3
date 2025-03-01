@@ -39,6 +39,18 @@ const TableTD = styled.td`
     padding: 1vw 1vh;
 `
 
+/*reduce image size*/
+const ImageStyle = styled.img`
+    height: 100%;
+    width: 45%;
+    padding: 1vh 2vw;
+`;
+/*css style for image div*/
+const ImageDiv = styled.div`
+    display: block;
+    unicode-bidi: isolate;
+`;
+
 export default function Technical() {
     return (
         <MainContainer>
@@ -75,6 +87,12 @@ export default function Technical() {
                     </tbody>
                 </table>
             </MainText>
+            
+            <ImageDiv>
+                <ImageStyle src="public/csLang.jpg" alt="an image of a list of CS programming languages"/> 
+                <ImageStyle src="public/unityLogo.jpg" alt="an image of Unity's logo"/> 
+            </ImageDiv>
+        
         </MainContainer>
     )
 }

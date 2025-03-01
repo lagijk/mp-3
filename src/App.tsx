@@ -37,24 +37,12 @@ function Root() {
                 <Navigation/>
 
                   <Routes>
-                    <Route 
-                        path="/*" 
-                        element={<Home/>}/>
-                    <Route
-                        path="/education"
-                        element={<Education/>}/>
-                    <Route
-                        path="/experiences"
-                        element={<Experiences/>}/>
-                    <Route
-                        path="/technical"
-                        element={<Technical/>}/>
-                    <Route
-                        path="/achievements"
-                        element={<Achievements/>}/>
-                    <Route
-                        path="/projects"
-                        element={<Projects/>}/>
+                    <Route path="/*" element={<Home/>}/>
+                    <Route path="/education" element={<Education/>}/>
+                    <Route path="/experiences" element={<Experiences/>}/>
+                    <Route path="/technical" element={<Technical/>}/>
+                    <Route path="/achievements" element={<Achievements/>}/>
+                    <Route path="/projects" element={<Projects/>}/>
                   </Routes>
                 
               </ContainerDiv>
