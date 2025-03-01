@@ -8,6 +8,11 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -25,6 +30,13 @@ const ImageText = styled.div`
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     padding: 1vh 2vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column; 
+        padding: 2vh 2vw;
+    }
 `;
 
 /*css style for text in main*/
@@ -34,11 +46,23 @@ const SchoolsDiv = styled.div`
     align-self: center;
     width: 50%;
     margin: 1vh 1vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+
+    /*increase text font on smaller screen*/
+        font-size: calc(3px + 2vw);
+    }
 `;
 
 const DateText = styled.p`
     font-size: calc(2px + 1vw);
     padding: 1vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        font-size: calc(2px + 2vw);
+    }
 `;
 
 /*reduce image size*/
@@ -47,6 +71,14 @@ const ImageStyle = styled.img`
     padding: 0.5vw;
     margin: 1vh 1vw;
     border-radius: calc(15px + 10vw);
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+
+    /*center image in smaller screen*/
+        max-width: 100%;
+        margin: auto;
+    }
 `;
 
 export default function Education() {

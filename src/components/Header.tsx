@@ -9,6 +9,13 @@ const HeaderContainer = styled.header`
     display: flex;
     flex-direction: column;
     padding: 2vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*screen < 750px should have content aligned center*/
+        text-align: center;
+        font-size: calc(6px + 3vw);
+    }
 `;
 
 /*custom css style for subtitle under header*/

@@ -24,6 +24,13 @@ const ContainerDiv = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+    }
 `;
 
 function Root() {

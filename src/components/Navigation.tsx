@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 
 /*screen > 750px should not exceed 30% of width of parent*/
 const NavContainer = styled.nav`
-    width: 30%
+    width: 30%;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for the unordered list of internal links inside nav*/
@@ -16,6 +22,16 @@ const NavUl = styled.ul`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+
+    /*nav change to horizontal on mobile/smaller screen*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
 `;
 
 /*css style for the list of links*/
@@ -27,6 +43,15 @@ const NavList = styled.li`
     border: solid #3F72AF;
     border-radius: calc(1px + 1vw);
     background-color: #3F72AF;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+
+    /*reduce size for internal links on smaller devices*/
+        padding: 0.5vh 0.5vw;
+        margin: 0.5vh;
+        border-radius: calc(1px + 1vw);
+    }
 `;
 
 /*css style for links inside nav*/

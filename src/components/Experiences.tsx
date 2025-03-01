@@ -7,6 +7,12 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*screen < 1000px should occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -21,6 +27,12 @@ const Header2 = styled.h2`
 const Header3 = styled.h3`
     font-size: calc(3px + 1vw);
     padding: 0.5vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase font size in smaller screen*/
+        font-size: calc(3px + 2vw);
+    }
 `;
 
 /*css style for text in main*/
@@ -32,12 +44,25 @@ const MainText = styled.div`
     width: 65%;
     margin: 1vh 1vw;
     padding: 0.5vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase text font on smaller screen*/
+        font-size: calc(3px + 2vw);
+        width: 50%;
+    }
 `;
 
 /*css styling for all dates of internship*/
 const DateText = styled.p`
     font-size: calc(2px + 1vw);
     padding: 1vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase font size in smaller screen*/
+        font-size: calc(2px + 2vw);
+    }
 `;
 
 export default function Experiences() {

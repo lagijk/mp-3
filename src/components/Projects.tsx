@@ -7,6 +7,12 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*screen < 1000px should occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -31,6 +37,12 @@ const TableTD = styled.td`
     color: #112D4E;
     border: solid 2px #3F72AF;
     padding: 1vw 1vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase text font on smaller screen*/
+        font-size: calc(7px + 1vw);
+    }
 `;
 
 const Header3 = styled.h3`
@@ -50,6 +62,16 @@ const CalcInput = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        font-size: calc(4px + 2vw);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 `;
 
 /*css styling for all buttons*/
@@ -71,7 +93,7 @@ const Output = styled.h3`
     padding: 2vh 1vw;
     margin-left: auto;
     margin-right: auto;
-`
+`;
 
 export default function Projects() {
     return (

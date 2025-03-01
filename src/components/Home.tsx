@@ -7,6 +7,12 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        /*screen < 1000px should occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -24,6 +30,12 @@ const ImageText = styled.div`
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     padding: 1vh 2vw;
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 2vw;
+    }
 `;
 
 /*css style for text in main*/
@@ -33,6 +45,12 @@ const MainText = styled.div`
     align-self: center;
     width: 50%;
     margin: 1vh 1vw;
+
+    @media screen and (max-width: 900px) {
+    /*increase text font on smaller screen*/
+        font-size: calc(3px + 2vw);
+        
+    }
 `;
 
 /*css style for home page sub text under main*/
@@ -41,6 +59,10 @@ const SubMainText = styled.div`
     font-size: calc(3px + 1vw);
     color: #112D4E;
     padding: 1vw;
+
+    @media screen and (max-width: 900px) {
+        font-size: calc(3px + 2vw);
+    }
 `;
 
 /*reduce image size*/
@@ -49,6 +71,12 @@ const ImageStyle = styled.img`
     padding: 0.5vw;
     margin: 1vh 1vw;
     border-radius: calc(1px + 1vw);
+
+    @media screen and (max-width: 900px) {
+    /*center image in smaller screen*/
+        max-width: 100%;
+        margin: auto;
+    }
 `;
 
 export default function Home() {

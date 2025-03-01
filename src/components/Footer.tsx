@@ -7,6 +7,11 @@ const FooterContainer = styled.footer`
     font-size: calc(1px + 1vw);
     padding: 1vh 1vw;
     align-items: baseline;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        font-size: calc(4px + 1vw);
+    }
 `;
 
 const FooterLink = styled.a`

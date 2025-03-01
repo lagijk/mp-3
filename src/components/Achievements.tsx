@@ -7,6 +7,12 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*screen < 1000px should occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -26,6 +32,14 @@ const MainText = styled.div`
     width: 80%;
     margin: 1vh 1vw;
     padding: 0.5vh 2vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+
+    /*increase text font on smaller screen*/
+        font-size: calc(3px + 2vw);
+        width: 60%;
+    }
 `;
 
 /*css style for award names*/
@@ -37,6 +51,12 @@ const AwardText = styled.p`
     width: 100%;
     margin: 1vh 1vw;
     padding: 1vh;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase font size in smaller screen*/
+        font-size: calc(6px + 2vw);
+    }
 `;
 
 /*css style for school names*/
@@ -47,7 +67,14 @@ const SchoolName = styled.p`
     align-self: center;
     width: 100%;
     margin: 1vh 1vw;
-`
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase font size in smaller screen*/
+        font-size: calc(4px + 2vw);
+    }
+`;
+
 
 export default function Achievements() {
     return (

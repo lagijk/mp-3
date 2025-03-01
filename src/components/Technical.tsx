@@ -7,6 +7,12 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     background-color: #F9F7F7;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*screen < 1000px should occupy 100% of the width of its parent*/
+        width: 100%;
+    }
 `;
 
 /*css style for secondary header(internal link title)*/
@@ -22,6 +28,11 @@ const Header3 = styled.h3`
     font-family: "Gill Sans", sans-serif;
     padding: 1vw 1vh;
     width: 60%;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        width: 50%;
+    }
 `;
 
 /*css style for text in main*/
@@ -30,6 +41,13 @@ const MainText = styled.div`
     flex-direction: row;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2vh 2vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
 `;
 
 const TableTD = styled.td`
@@ -37,14 +55,31 @@ const TableTD = styled.td`
     color: #112D4E;
     border: solid 1px #3F72AF;
     padding: 1vw 1vh;
-`
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*increase text font on smaller screen*/
+        font-size: calc(4px + 2vw);
+        align-self: center;
+        width: 50%;
+        margin: 1vh 1vw;
+    }
+`;
 
 /*reduce image size*/
 const ImageStyle = styled.img`
     height: 100%;
     width: 45%;
     padding: 1vh 2vw;
+
+    /*mobile device screen 750 -1000px*/
+    @media screen and (max-width: 900px) {
+    /*center image in smaller screen*/
+        max-width: 100%;
+        margin: auto;
+    }
 `;
+
 /*css style for image div*/
 const ImageDiv = styled.div`
     display: block;
@@ -87,7 +122,7 @@ export default function Technical() {
                     </tbody>
                 </table>
             </MainText>
-            
+
             <ImageDiv>
                 <ImageStyle src="public/csLang.jpg" alt="an image of a list of CS programming languages"/> 
                 <ImageStyle src="public/unityLogo.jpg" alt="an image of Unity's logo"/> 
