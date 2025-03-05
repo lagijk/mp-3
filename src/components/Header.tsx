@@ -18,18 +18,11 @@ const HeaderContainer = styled.header`
     }
 `;
 
-/*custom css style for subtitle under header*/
-const SubTitleDiv = styled.p`
-    font-family: "Gill Sans", sans-serif;
-    font-size: calc(5px + 1vw);
-    padding: 1vh 1vw
-`;
-
 export default function Header() {
     return (
         <HeaderContainer>
             <h1>Alex Chen</h1>
-            <SubTitleDiv>Alex's online resume</SubTitleDiv>
+            <p>Alex's online resume</p>
         </HeaderContainer>
     )
 }

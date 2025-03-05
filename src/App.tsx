@@ -13,10 +13,21 @@ import Technical from './components/Technical.tsx';
 import Achievements from './components/Achievements.tsx';
 import Projects from './components/Projects.tsx';
 
+
+/*a flex container that make sure content take up entire page without empty spaces at the bottom in small screen*/
+const FlexContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+`;
+
 /*white spaces on left and right, main page take up 80%*/
 const PageWrapper = styled.div`
-  width: 80vw;
-  margin: 0 auto;
+    width: 80vw;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 `;
 
 const ContainerDiv = styled.div`
@@ -24,18 +35,19 @@ const ContainerDiv = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #F9F7F7;
+    flex-grow: 1;
 
     /*mobile device screen 750 -1000px*/
     @media screen and (max-width: 900px) {
         width: 100%;
         flex-direction: column;
-        height: 100vh;
     }
 `;
 
 function Root() {
     return (
         <>
+        <FlexContainer>
           <PageWrapper>
 
               <Header/>
@@ -56,6 +68,7 @@ function Root() {
 
               <Footer/>
           </PageWrapper>
+        </FlexContainer>
         </>
     );
 }

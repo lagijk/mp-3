@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Calculator from "./Calculator";
 
 /*screen > 1000px should not have main exceed 70% of width of parent
 css style of overall main tag*/
@@ -45,60 +46,37 @@ const TableTD = styled.td`
     }
 `;
 
-const Header3 = styled.h3`
-    text-align: center;
-    padding: 1vw 1vh;
-`;
-
-/*css styling for overall calculator*/
-const CalcContainer = styled.div`
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #112D4E;
-`;
-
-/*css style for overall input, including input button and label*/
-const CalcInput = styled.div`
-    font-size: calc(4px + 1vw);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
-    /*mobile device screen 750 -1000px*/
-    @media screen and (max-width: 900px) {
-        font-size: calc(4px + 2vw);
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-`;
-
-/*css styling for all buttons*/
-const CalcButton = styled.div`
-    width: 60%;
-    padding: 2vh 2vw;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-`;
-
-/*css styling for result of calculator*/
-const Output = styled.h3`
-    width: 50%;
-    border: calc(1px + 0.1vw) solid #3F72AF;
-    border-radius: calc(1px + 1vw);
-    background-color: #F5F5F5;
-    padding: 2vh 1vw;
-    margin-left: auto;
-    margin-right: auto;
-`;
 
 export default function Projects() {
     return (
         <MainContainer>
-            
+            <Header2>Projects</Header2>
+            <PersonalDiv>
+                <table>
+                    <tbody>
+                        <tr>
+                            <TableTD>Untitled Game</TableTD>
+                        </tr>
+                        <tr>
+                            <TableTD>
+                                <video width="320" controls>
+                                    <source src="/videos/gameDev_FixedPathing.mp4"/>
+                                </video>
+                            </TableTD>
+                        </tr>
+                        <tr>
+                            <TableTD>
+                                <p>An ongoing 2D pixel dungeon crawler game developed in Unity with procedural dungeon generation and A* pathfinding. 
+                                    The game used Aseprite for character and environment design. 
+                                </p>
+                            </TableTD>
+                        </tr>
+                    </tbody>
+                </table>
+            </PersonalDiv>
+
+            <Calculator/>
+
         </MainContainer>
     )
 }
