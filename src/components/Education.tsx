@@ -103,7 +103,7 @@ export default function Education() {
                     </li>
                 </ul>
             </SchoolsDiv>
-                <ImageStyle src="public/BU.png" alt="an image of the seal of Boston University"/>
+                <ImageStyle src="/BU.png" alt="an image of the seal of Boston University"/>
             </ImageText>
         </MainContainer>
     )

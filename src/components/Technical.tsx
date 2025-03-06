@@ -124,8 +124,8 @@ export default function Technical() {
             </MainText>
 
             <ImageDiv>
-                <ImageStyle src="public/csLang.jpg" alt="an image of a list of CS programming languages"/> 
-                <ImageStyle src="public/unityLogo.jpg" alt="an image of Unity's logo"/> 
+                <ImageStyle src="/csLang.jpg" alt="an image of a list of CS programming languages"/> 
+                <ImageStyle src="/unityLogo.jpg" alt="an image of Unity's logo"/> 
             </ImageDiv>
         
         </MainContainer>

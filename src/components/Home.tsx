@@ -84,7 +84,7 @@ export default function Home() {
         <MainContainer>
             <Header2>Home</Header2>
             <ImageText>
-                <ImageStyle src="public/Me.jpg" alt="an image of Alex"/>
+                <ImageStyle src="/Me.jpg" alt="an image of Alex"/>
                 <MainText>
                     <p>
                         My name is Alex Chen. I'm a student at Boston University studying Computer Science, 
